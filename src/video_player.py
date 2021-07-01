@@ -26,7 +26,7 @@ class VideoPlayer:
         for video in all_videos:  # Loop through txt file, reading each video line by line
             tagString = str(video.tags)  # Convert to string to allow stripping of brackets
             # tagStrip.strip("()") # Old code - this didn't make a difference with this line placement
-            print(video.title, "((", video.video_id, "))", "[[", tagString.strip("()"), "]]")
+            print(video.title, "(", video.video_id, ")", "[", tagString.strip("()"), "]")
 
         # print("show_all_videos needs implementation")
         
